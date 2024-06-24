@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background restoran.jpg'); /* Ganti 'background.jpg' dengan URL gambar latar belakang Anda */
+            background-size: cover; /* Menyesuaikan gambar background agar memenuhi seluruh halaman */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            height: 50px; /* Menetapkan tinggi navbar */
+        }
+
+        .navbar a {
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 10px; /* Menambahkan margin untuk membuat item-menu berada di tengah */
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 50px; /* Mengatur margin atas agar konten utama tidak tertutup navbar */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Menggunakan opacity pada latar belakang */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .logout-link {
+            background-color: #f44336;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: auto; /* Menggeser tombol logout ke pojok kanan */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="dashboard.php"><i class="fas fa-home"></i> Home</a>
+        <a href="makanan.php"><i class="fas fa-utensils"></i> Makanan</a>
+        <a href="minuman.php"><i class="fas fa-cocktail"></i> Minuman</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="kontak.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="logout.php" class="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <div class="container">
+        <h2>Kontak Kami</h2>
+        <div class="contact-info">
+            <p><strong><i class="fas fa-map-marker-alt"></i> Alamat :</strong> Jalan Baru No.15, Kota Sumbawa</p>
+            <p><strong><i class="fab fa-whatsapp"></i> WhatsApp :</strong> 081 237 109 445</p>
+            <p><strong><i class="fas fa-envelope"></i> Email :</strong> dpwresto@gmail.com</a></p>
+            <p><strong><i class="fab fa-facebook"></i> Facebook :</strong> DPW Resto</a></p>
+            <p><strong><i class="fab fa-instagram"></i> Instagram :</strong> @DPW_Resto</a></p>
+            <p><strong><i class="fas fa-globe"></i> Website :</strong> www.dpwresto.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
