@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Profil Restoran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background restoran.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            border-radius: 0;
+            display: flex;
+            justify-content: center;
+            height: 50px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center-align text in the container */
+        }
+
+        .logout-link {
+            background-color: #f44336;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header img {
+            max-width: 600px;
+            border-radius: 50%;
+        }
+
+        .profile-section {
+            margin-bottom: 20px;
+        }
+
+        .profile-section img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .profile-section h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+        }
+
+        .team-member h4 {
+            text-align: left;
+            position: relative;
+        }
+
+        .team-member h4::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 100%;
+            background-color: #333;
+        }
+
+        .sponsors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .sponsor {
+            flex: 1 1 150px;
+            text-align: center;
+        }
+
+        .sponsor img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="dashboard.php"><i class="fas fa-home"></i> Home</a>
+        <a href="makanan.php"><i class="fas fa-utensils"></i> Makanan</a>
+        <a href="minuman.php"><i class="fas fa-cocktail"></i> Minuman</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="kontak.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="logout.php" class="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <img src="logo resto.jpg" alt="Logo Website">
+            <h2>DPW Resto</h2>
+        </div>
+        <div class="profile-section">
+            <h3>Sejarah Restoran</h3>
+            <p>DPW Resto didirikan pada tahun 2020 dengan tujuan menyediakan pengalaman bersantap yang tak terlupakan. Awalnya, kami memulai sebagai sebuah kafe kecil dengan hanya beberapa menu pilihan. Namun, dedikasi kami untuk menyajikan makanan berkualitas dan layanan terbaik menarik perhatian banyak pelanggan.</p>
+            <p>Dalam beberapa tahun pertama, DPW Resto mengalami pertumbuhan pesat. Kami memperluas menu kami, menambahkan berbagai hidangan lokal dan internasional untuk memenuhi selera beragam pelanggan kami. Selain itu, kami mulai memperhatikan detail interior restoran untuk menciptakan suasana yang nyaman dan ramah.</p>
+            <p>Kesuksesan ini tidak lepas dari kerja keras tim kami yang selalu berusaha memberikan yang terbaik dalam setiap hidangan dan pelayanan. Dengan dukungan pelanggan setia, kami terus berkembang dan membuka beberapa cabang lainnya dalam beberapa tahun berikutnya.</p>
+            <p>Saat ini, DPW Resto dikenal sebagai salah satu restoran terkemuka di wilayah ini. Kami telah menerima berbagai penghargaan atas kualitas makanan dan layanan kami. Tidak hanya itu, kami juga aktif dalam berbagai kegiatan sosial dan komunitas, mendukung program-program yang bertujuan untuk memberikan manfaat bagi masyarakat sekitar.</p>
+            <p>Kami berkomitmen untuk terus menjaga kualitas dan inovasi dalam setiap aspek restoran kami. Dengan tim yang bersemangat dan berdedikasi, DPW Resto akan selalu menjadi tempat di mana kenangan indah diciptakan melalui makanan yang lezat dan pelayanan yang hangat.</p>
+        </div>        
+        <div class="profile-section">
+            <h3>Misi Kami</h3>
+            <p>Misi kami adalah menyajikan makanan dan minuman berkualitas tinggi yang dibuat dengan bahan-bahan segar dan alami. Kami percaya bahwa makanan yang baik dapat membawa kebahagiaan, dan kami berkomitmen untuk memberikan pengalaman terbaik bagi setiap tamu yang datang.</p>
+            <p>Kami selalu berusaha untuk menjaga kualitas setiap hidangan yang kami sajikan. Mulai dari pemilihan bahan baku terbaik, proses memasak yang higienis, hingga penyajian yang menarik. Setiap langkah dalam proses ini dilakukan dengan penuh perhatian dan dedikasi untuk memastikan bahwa pelanggan kami mendapatkan yang terbaik.</p>
+            <p>Tidak hanya fokus pada kualitas makanan, kami juga mengutamakan pelayanan yang ramah dan profesional. Tim kami dilatih untuk memberikan layanan yang cepat dan tepat, serta selalu siap membantu dan menjawab pertanyaan pelanggan dengan baik. Kami ingin setiap tamu merasa dihargai dan diperhatikan selama kunjungan mereka.</p>
+            <p>Kami juga peduli terhadap keberlanjutan lingkungan. Oleh karena itu, kami berusaha untuk menggunakan bahan-bahan lokal dan organik, serta mengurangi penggunaan plastik dan bahan-bahan yang tidak ramah lingkungan. Kami percaya bahwa menjaga lingkungan adalah bagian dari tanggung jawab kami sebagai pelaku bisnis di industri kuliner.</p>
+            <p>Melalui inovasi dan peningkatan berkelanjutan, kami bertekad untuk terus mengembangkan menu dan layanan kami agar selalu sesuai dengan kebutuhan dan keinginan pelanggan. Kami senantiasa mendengarkan masukan dan kritik yang membangun untuk menjadi lebih baik lagi di masa mendatang.</p>
+            <p>Dengan misi yang kuat ini, kami berharap DPW Resto tidak hanya menjadi tempat makan, tetapi juga tempat di mana kenangan indah dan kebahagiaan diciptakan. Terima kasih telah mempercayakan momen-momen istimewa Anda kepada kami.</p>
+        </div>        
+        <div class="profile-section">
+            <h3>Tim Kami</h3>
+            <p>Tim kami terdiri dari chef berpengalaman dan staf yang berdedikasi untuk memberikan pelayanan terbaik. Kami bekerja sebagai satu keluarga untuk memastikan setiap kunjungan Anda ke DPW Resto adalah pengalaman yang menyenangkan dan berkesan.</p>
+            
+            <div class="team-member">
+                <h4>Executive Chef</h4>
+                <p>Nama: Budi Santoso</p>
+                <p>Asal: Sumbawa Besar</p>
+                <p>Deskripsi: Budi adalah executive chef kami yang telah berpengalaman lebih dari 20 tahun di industri kuliner. Beliau selalu memastikan setiap hidangan yang keluar dari dapur kami memiliki cita rasa yang sempurna.</p>
+            </div>
+            
+            <div class="team-member">
+                <h4>Vice Executive Chef</h4>
+                <p>Nama: Siti Nurhaliza</p>
+                <p>Asal: Moyo Hulu</p>
+                <p>Deskripsi: Siti adalah tangan kanan Budi, bertanggung jawab atas koordinasi dapur dan memastikan semua berjalan lancar. Keahliannya dalam mengolah masakan lokal menjadi andalan kami.</p>
+            </div>
+            
+            <div class="team-member">
+                <h4>Pastry Chef</h4>
+                <p>Nama: Ahmad Fauzi</p>
+                <p>Asal: Batu Alang</p>
+                <p>Deskripsi: Ahmad adalah ahli dalam membuat berbagai jenis kue dan hidangan penutup yang lezat. Kreativitasnya dalam menciptakan dessert selalu memukau pelanggan kami.</p>
+            </div>
+            
+            <div class="team-member">
+                <h4>Restaurant Manager</h4>
+                <p>Nama: Dewi Lestari</p>
+                <p>Asal: Nijang</p>
+                <p>Deskripsi: Dewi bertanggung jawab atas operasional harian restoran. Dengan pengalaman lebih dari 10 tahun, beliau memastikan bahwa setiap tamu mendapatkan pelayanan terbaik.</p>
+            </div>
+            
+            <div class="team-member">
+                <h4>Head Waiter</h4>
+                <p>Nama: Andi Wijaya</p>
+                <p>Asal: Kerato</p>
+                <p>Deskripsi: Andi adalah kepala pelayan yang selalu memastikan pelayanan yang ramah dan profesional kepada setiap tamu. Kepiawaiannya dalam mengkoordinasi tim pelayan sangat membantu operasional restoran.</p>
+            </div>
+            
+            <div class="team-member">
+                <h4>Barista</h4>
+                <p>Nama: Rina Kartika</p>
+                <p>Asal: Brang Biji</p>
+                <p>Deskripsi: Rina adalah barista handal yang selalu menyajikan minuman dengan cita rasa yang konsisten. Keahliannya dalam meracik kopi dan minuman lainnya membuat pelanggan kami selalu kembali.</p>
+            </div>
+        </div>        
+        <div class="profile-section">
+            <h3>Sponsor & Partner Kami</h3>
+            <p>Kami bekerja sama dengan berbagai sponsor dan mitra untuk memberikan pengalaman terbaik bagi pelanggan kami. Dukungan mereka membantu kami dalam menjaga kualitas dan inovasi yang terus berkembang di DPW Resto.</p>
+            <div class="sponsors">
+                <div class="sponsor">
+                    <img src="sponsor1.jpg" alt="Sponsor 1">
+            
+                </div>
+                <div class="sponsor">
+                    <img src="sponsor2.jpg" alt="Sponsor 2">
+                </div>
+                <div class="sponsor">
+                    <img src="sponsor3.png" alt="Sponsor 3">
+                </div>
+                <div class="sponsor">
+                    <img src="sponsor4.jpg" alt="Sponsor 4">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
