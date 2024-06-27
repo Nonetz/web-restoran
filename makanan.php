@@ -134,7 +134,7 @@
 </head>
 <body>
 <div class="navbar">
-    <a href="dashboard.php"><i class="fas fa-home"></i> Home</a>
+    <a href="dashboard.html"><i class="fas fa-home"></i> Home</a>
     <a href="makanan.php"><i class="fas fa-utensils"></i> Makanan</a>
     <a href="minuman.php"><i class="fas fa-cocktail"></i> Minuman</a>
     <a href="about.html"><i class="fas fa-info-circle"></i> About</a>

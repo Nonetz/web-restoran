@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Registrasi berhasil
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $username;
-            header("Location: dashboard.php"); // Redirect ke halaman dashboard setelah registrasi berhasil
+            header("Location: dashboard.html"); // Redirect ke halaman dashboard setelah registrasi berhasil
             exit();
         } else {
             echo "Error: " . $query . "<br>" . mysqli_error($koneksi);

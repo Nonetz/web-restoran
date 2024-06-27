@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["loggedin"] = true;
             $_SESSION["username"] = $username;
             // Redirect ke halaman dashboard jika login berhasil
-            header("Location: dashboard.php");
+            header("Location: dashboard.html");
             exit();
         } else {
             // Password salah, tampilkan pesan error
